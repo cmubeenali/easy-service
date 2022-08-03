@@ -9,11 +9,60 @@ class ServiceAdd extends StatelessWidget {
       appBar: AppBar(
         title: const Text("New Service"),
       ),
-      body: const Center(
-        child: Text(
-          "Add New Service",
-          style: TextStyle(
-              fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        clipBehavior: Clip.none,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            SingleChildScrollView(
+              clipBehavior: Clip.none,
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  SizedBox(
+                  height: MediaQuery.of(context).size.height/2,
+                  width: MediaQuery.of(context).size.width/2,
+                  child: Card(
+                    color: Colors.redAccent,
+                  ),
+                  
+            ),
+            SizedBox(
+                  height: MediaQuery.of(context).size.height/2,
+                  width: MediaQuery.of(context).size.width/2,
+                  child: Card(
+                    color: Colors.green,
+                  ),),
+                  SizedBox(
+                  height: MediaQuery.of(context).size.height/2,
+                  width: MediaQuery.of(context).size.width/2,
+                  child: Card(
+                    color: Colors.purple,
+                  ),),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height/2,
+              width: MediaQuery.of(context).size.width/2,
+              child: Card(
+                color: Colors.redAccent,
+              ),
+            ),
+            SizedBox(
+                  height: MediaQuery.of(context).size.height/2,
+                  width: MediaQuery.of(context).size.width/2,
+                  child: Card(
+                    color: Colors.green,
+                  ),),
+                  SizedBox(
+                  height: MediaQuery.of(context).size.height/2,
+                  width: MediaQuery.of(context).size.width/2,
+                  child: Card(
+                    color: Colors.purple,
+                  ),),
+          ],
         ),
       ),
     );
