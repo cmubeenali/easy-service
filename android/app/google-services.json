@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "693036811873",
+    "firebase_url": "https://easy-service-9c780-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "easy-service-9c780",
     "storage_bucket": "easy-service-9c780.appspot.com"
   },
@@ -29,6 +30,13 @@
             {
               "client_id": "693036811873-qirkhlrai1pvtenav9ahm7l9ojcg62k4.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "693036811873-h31lfagsn69421n6mteqf6gq0o9pemte.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.easyService"
+              }
             }
           ]
         }

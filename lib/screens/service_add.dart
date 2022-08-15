@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:easy_service/screens/service_add_functionality.dart';
 
 class ServiceAdd extends StatelessWidget {
-  const ServiceAdd({Key? key}) : super(key: key);
+  ServiceAdd({Key? key}) : super(key: key);
+
+  final modelService = ModelService("", "", "", DateTime.now());
 
   @override
   Widget build(BuildContext context) {
@@ -54,6 +57,9 @@ class ServiceAdd extends StatelessWidget {
                         border: OutlineInputBorder(),
                         hintText: 'Title',
                       ),
+                      onChanged: (val) {
+                        modelService.title = val.trim();
+                      },
                     ),
                   ),
                   Padding(
@@ -64,6 +70,9 @@ class ServiceAdd extends StatelessWidget {
                         border: OutlineInputBorder(),
                         hintText: 'Phone Number',
                       ),
+                      onChanged: (val) {
+                        modelService.phoneNumber = val.trim();
+                      },
                     ),
                   ),
                   Padding(
@@ -74,6 +83,9 @@ class ServiceAdd extends StatelessWidget {
                         border: OutlineInputBorder(),
                         hintText: 'Description',
                       ),
+                      onChanged: (val) {
+                        modelService.description = val.trim();
+                      },
                     ),
                   ),
                   Row(
@@ -89,6 +101,7 @@ class ServiceAdd extends StatelessWidget {
                                 border: OutlineInputBorder(),
                                 hintText: 'Expected Service Date',
                               ),
+                              onChanged: (val) {},
                             ),
                           )),
                       Expanded(
@@ -101,6 +114,7 @@ class ServiceAdd extends StatelessWidget {
                               border: OutlineInputBorder(),
                               hintText: 'Time',
                             ),
+                            onChanged: (val) {},
                           ),
                         ),
                       )
@@ -112,8 +126,12 @@ class ServiceAdd extends StatelessWidget {
                       width: MediaQuery.of(context).size.width,
                       height: 50,
                       child: ElevatedButton(
-                        onPressed: () {},
-                        child: Text('REGISTER',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                        onPressed: () => onAddService(modelService),
+                        child: Text(
+                          'REGISTER',
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                   )

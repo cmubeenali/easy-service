@@ -22,7 +22,7 @@ class ServiceList extends StatelessWidget {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const ServiceAdd(),
+                  builder: (context) => ServiceAdd(),
                 ));
           },
           tooltip: 'Increment',

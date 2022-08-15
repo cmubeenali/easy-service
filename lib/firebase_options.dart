@@ -52,6 +52,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '693036811873',
     projectId: 'easy-service-9c780',
     authDomain: 'easy-service-9c780.firebaseapp.com',
+    databaseURL: 'https://easy-service-9c780-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'easy-service-9c780.appspot.com',
     measurementId: 'G-MWSBPYV70D',
   );
@@ -61,6 +62,7 @@ class DefaultFirebaseOptions {
     appId: '1:693036811873:android:b2a849845737b52ee8cc20',
     messagingSenderId: '693036811873',
     projectId: 'easy-service-9c780',
+    databaseURL: 'https://easy-service-9c780-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'easy-service-9c780.appspot.com',
   );
 
@@ -69,6 +71,7 @@ class DefaultFirebaseOptions {
     appId: '1:693036811873:ios:08b6c5b14c2ad0dce8cc20',
     messagingSenderId: '693036811873',
     projectId: 'easy-service-9c780',
+    databaseURL: 'https://easy-service-9c780-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'easy-service-9c780.appspot.com',
     iosClientId: '693036811873-h31lfagsn69421n6mteqf6gq0o9pemte.apps.googleusercontent.com',
     iosBundleId: 'com.example.easyService',
